@@ -1,0 +1,32 @@
+#sea-sky
+{
+color:blue;
+}
+
+#lobster
+{
+color:red;
+}
+
+#violet-purple
+{
+color:purple;
+}
+
+ol
+{
+background-color:white;
+}
+
+body
+{
+background-image:url("http://cdn.theatlantic.com/assets/media/img/posts/fox.banner.flickr.jpg.jpg");
+background-repeat: repeat-y;/*
+background-image:url("for all of the programming or stuff.png")
+/**/
+}
+
+div
+{
+background-color:green;
+}
