@@ -1,0 +1,121 @@
+body
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+div.header1
+{
+	height: 150px;
+	width: 100%;
+	display: block;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	float: left;
+	background-color: rgb(50, 50, 50);
+}
+
+div.header1 p
+{
+	font-size: 48px;
+	color: rgb(255,255,255);	
+}
+
+div.box1
+{
+	position: fixed;
+	clear: both;
+	font-family: Verdana;
+	font-size: 18px;
+	border: solid;
+	height: 90px;
+	width: 200px;
+	top: 160px;
+	left: 20px;
+	font-color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 255);
+}
+
+div.box2
+{
+	position: fixed;
+	clear: both;
+	font-family: Verdana;
+	font-size: 18px;
+	border: solid;
+	height: 90px;
+	width: 200px;
+	top: 260px;
+	left: 20px;
+	background-color: rgb(0, 0, 255);
+}
+
+div.box3
+{
+	position: fixed;
+	clear: both;
+	font-family: Verdana;
+	font-size: 18px;
+	border: solid;
+	height: 90px;
+	width: 200px;
+	top: 360px;
+	left: 20px;
+	background-color: rgb(0, 0, 255);
+}
+
+div.box4
+{
+	position: fixed;
+	clear: both;
+	font-family: Verdana;
+	font-size: 18px;
+	border: solid;
+	height: 90px;
+	width: 200px;
+	top: 460px;
+	left: 20px;
+	background-color: rgb(0, 0, 255);
+}
+
+div.box1 p
+{
+	color: rgb(255, 255, 255);
+	position: relative; 
+	text-align: center;
+	top: 20px;
+}
+
+div.box2 p
+{
+	color: rgb(255, 255, 255);
+	position: relative; 
+	text-align: center;
+	top: 20px;
+}
+
+div.box3 p
+{
+	color: rgb(255, 255, 255);
+	position: relative; 
+	text-align: center;
+	top: 20px;
+}
+
+div.box4 p
+{
+	color: rgb(255, 255, 255);
+	position: relative; 
+	text-align: center;
+	top: 20px;
+}
+
+div.facebook
+{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	top: 570px;
+	left: 30px;
+}
