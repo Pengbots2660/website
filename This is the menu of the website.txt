@@ -8,28 +8,29 @@
 
 <body>
 	<div class="header1"><a href="Just Pixels.html"><p>Pengbots2660</p></a></div>
-	<div class="header2"><div class="insideborder2"></div></div>
 
-	<div class="box1"><a href="Team page.html"> <p>Team</p> </a></div>
-	<div class="box2"><a href="media"> <p>Media</p> </a></div>
-	<div class="box3"><a href="sponsors"> <p>Sponsors</p> </a></div>
+	<div class="box1"><a href="team.html"> <p>Team</p> </a></div>
+	<div class="box2"><a href="media.html"> <p>Media</p> </a></div>
+	<div class="box3"><a href="sponsors.html"> <p>Sponsors</p> </a></div>
 	<div class="box4"> <p>Something else?</p> </div>
 	<div class="facebook"> <a href="http://www.facebook.com"><img src="facebook symbol.png"></a></div>
 	<div id="topbar"><img src="Rand.png" alt="A pic that will be relevent"></div>
 	<div class="dropdown1">
 		<ul>
-			<li><a href="Team page.html">Team</a></li>
-			<li><a href="">List of Team Members</a></li>
+			<li><a href="team.html">Team</a></li>
+			<li><a href="listofteam.html">List of Team Members</a></li>
 		</ul>
 	</div>
 	<div class="dropdown2">
 		<ul>
-			<li><a href="">How many do we need?</a></li>
+			<li><a href="media.html">How many do we need?</a></li>
+			<li><a href="listofmedia.html">List of media people</a></li>
 		</ul>
 	</div>
 	<div class="dropdown3">
 		<ul>
-			<li><a href="">?????</a></li>
+			<li><a href="sponsors.html">Sponsors</a></li>
+			<li><a href="list.html">List</a></li>
 		</ul>
 	</div>
 	<div class="themainbodystuff"><strong>HOME</strong><br>

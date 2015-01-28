@@ -5,6 +5,15 @@ body
 	background-color: rgb(255, 255, 255);
 }
 
+.backgroun
+{
+	position: fixed;
+	top: 150px;
+	z-index: -99;
+	height: 85%;
+	width: 100%;
+}
+
 a:link{	color: rgb(255, 255, 255); }
 
 a:visited {color: rgb(255, 255, 255);}
@@ -86,23 +95,24 @@ div.facebook
 	position: relative;
 	top: 50px;
 	left: 40px;
+	background: 
 }
 
 [class^="dropdown"]
 {
 	position: relative;
 	border: solid black;
-	background-color: rgb(0, 0, 255);
+	background-color: rgb(0, 0, 200);
 	color: rgb(255, 255, 255);
 	font-size: 16px;
 	display: none;
+	left: 225px;
 }
 
 .dropdown1
 {
 	height: 150px;
 	width: 300px;
-	left: 225px;
 	bottom: 624px;
 }
 
@@ -121,7 +131,6 @@ div.facebook
 	height: 150px;
 	width: 300px;
 	bottom: 518px;
-	left: 225px;
 }
 
 .box2:hover ~ div.dropdown2
@@ -139,7 +148,6 @@ div.facebook
 	height: 150px;
 	width: 300px;
 	bottom: 412px;
-	left: 225px;
 }
 
 .box3:hover ~ div.dropdown3
@@ -162,7 +170,6 @@ div.facebook
 	background-color: blue;
 	margin: 0px;
 	padding: 0px;
-	
 }
 
 .themainbodystuff
