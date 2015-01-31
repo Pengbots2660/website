@@ -2,42 +2,67 @@
 <html>
 <head>
 	<link href="The css.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="slideshowww.js"></script>
 	<title>Pengbots Website</title>
-	<meta http-equiv="refresh" content="5">
+	<link href="slideshowww.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-	<div class="header1"><a href="Just Pixels.html"><p>Pengbots2660</p></a></div>
+	<div class="header1"><a href="Just Pixels.html"><img src="Header pics/Pengbots_Logo.png"></a></div>
 	
 	<div class ="backgroun">
-		<img src="Background placeholder this is very serious.png" width=100% height=100%>
+		<img src="Header pics/Background placeholder this is very serious.png" width=100% height=100%>
 	</div>
 	<div class="box1"><a href="team.html"> <p>Team</p> </a></div>
 	<div class="box2"><a href="media.html"> <p>Media</p> </a></div>
 	<div class="box3"><a href="sponsors.html"> <p>Sponsors</p> </a></div>
-	<div class="box4"> <p>Something else?</p> </div>
-	<div class="facebook"> <a href="http://www.facebook.com"><img src="facebook symbol.png"></a></div>
-	<div id="topbar"><img src="Rand.png" alt="A pic that will be relevent"></div>
+	<div class="facebook"> <a href="http://www.facebook.com"><img src="Header pics/facebook symbol.png"></a></div>
+	<div id="topbar"><img src="Header pics/Rand.png" alt="A pic that will be relevent"></div>
 	<div class="dropdown1">
 		<ul>
-			<li><a href="team.html">Team</a></li>
-			<li><a href="listofteam.html">List of Team Members</a></li>
+			<li><a class="color" href="team.html">Team</a></li>
+			<li><a class="color" href="history.html">Team History</a></li>
 		</ul>
 	</div>
 	<div class="dropdown2">
 		<ul>
-			<li><a href="media.html">How many do we need?</a></li>
-			<li><a href="listofmedia.html">List of media people</a></li>
+			<li><a class="color" href="media.html">Media</a></li>
+			<li><a class="color" href="pictures.html">Pictures</a></li>
+			<li><a class="color" href="videos.html">Videos</a></li>
 		</ul>
 	</div>
-	<div class="dropdown3">
-		<ul>
-			<li><a href="sponsors.html">Sponsors</a></li>
-			<li><a href="list.html">List</a></li>
-		</ul>
-	</div>
-	<div class="themainbodystuff"><strong>Home</strong><br>
-	</div>
+	<div class="themainbodystuff"><strong>Home</strong><br></div>
+
+	<div id="slider_container_1">
+<div id="SliderName"><a href="home"><img src="Pictures/Mountains!!!.jpg" height="500" width="500"/> </a>
+
+<div class="SliderNameDescription"><img height="40" src="Pictures/Mountains!!!.jpg" style="float:left;margin-right:5px;" /> <strong>Hey! We&#39;re the Pengbots!!!</strong><br />
+Thanks for visiting our site.</div>
+<a href="http://www.usfirst.org"> <img src="Pictures/Mountains!!!.jpg" title="Description from Image Title" height="500" width="500"/> </a>
+
+<div class="SliderNameDescription"><img height="40" src="Pictures/Mountains!!!.jpg" style="float:left;margin-right:5px;" /> <strong>For Inspiration and Recognition of Science and Technology</strong><br />
+A non-profit organization dedicated to the future generations of engineers.</div>
+<a href="#"> <img src="Pictures/Mountains!!!.jpg" height="500" width="500"/> </a>
+
+<div class="SliderNameDescription"><img height="40" src="Pictures/Mountains!!!.jpg" style="float:left;margin-right:5px;" /> <strong>Our annual FRC get together</strong><br />
+Soon you can click here for more information and to sign up!<br />
+In the meantime let the suspense build...Muhahaha</div>
+</div>
+
+<div id="SliderNameNavigation"></div>
+<br />
+<script type="text/javascript">
+				var demoSlider = Sliderman.slider({container: 'SliderName', width: 640, height: 300, effects: 'rain',
+				display: {
+					pause: true, // slider pauses on mouseover
+					autoplay: 4000, // 3 seconds slideshow
+					always_show_loading: 200, // testing loading mode
+					description: {background: '#ffffff', opacity: 0.8, height: 50, position: 'bottom'}, // image description box settings
+					loading: {background: '#000000', opacity: 0.2, image: 'assets/slideshow/loading.gif'}, // loading box settings
+					buttons: {opacity: 0.6, prev: {className: 'SliderNamePrev', label: ''}, next: {className: 'SliderNameNext', label: ''}}, // Next/Prev buttons settings
+					navigation: {container: 'SliderNameNavigation', label: '&nbsp;'} // navigation (pages) settings
+				}});
+			</script></div>
 
 <script src="myScript.js"></script>
 </body>

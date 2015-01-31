@@ -70,11 +70,6 @@ div.box3
 	top: 30px;
 }
 
-div.box4
-{
-	top: 40px;
-}
-
 [class^="box"] p
 {
 	color: rgb(255, 255, 255);
@@ -104,7 +99,7 @@ div.facebook
 	border: solid black;
 	background-color: rgb(0, 0, 200);
 	color: rgb(255, 255, 255);
-	font-size: 16px;
+	font-size: 25px;
 	display: none;
 	left: 225px;
 }
@@ -113,7 +108,7 @@ div.facebook
 {
 	height: 150px;
 	width: 300px;
-	bottom: 624px;
+	bottom: 528px;
 }
 
 .box1:hover ~ div.dropdown1
@@ -130,7 +125,7 @@ div.facebook
 {
 	height: 150px;
 	width: 300px;
-	bottom: 518px;
+	bottom: 422px;
 }
 
 .box2:hover ~ div.dropdown2
@@ -143,21 +138,9 @@ div.facebook
 	display: block;
 }
 
-.dropdown3
+a.color:hover
 {
-	height: 150px;
-	width: 300px;
-	bottom: 412px;
-}
-
-.box3:hover ~ div.dropdown3
-{
-	display: block;
-}
-
-.dropdown3:hover
-{
-	display: block;
+	color: rgb(255, 0, 0);
 }
 
 #topbar
@@ -165,7 +148,7 @@ div.facebook
 	height: 150px;
 	width: 58.35%;
 	position: relative;
-	bottom: 634px;
+	bottom: 538px;
 	left: 800px;
 	background-color: blue;
 	margin: 0px;
@@ -188,4 +171,31 @@ div.facebook
 div strong
 {
 	font-size: 28px;
+}
+
+div.img {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #0000ff;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+div.img img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid #ffffff;
+}
+
+div.img a:hover img {
+    border:1px solid #0000ff;
+}
+
+div.desc {
+    text-align: center;
+    font-weight: normal;
+    width: 120px;
+    margin: 5px;
 }
