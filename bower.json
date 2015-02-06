@@ -1,0 +1,37 @@
+{
+  "name": "Pengbots2660.org",
+  "version": "1.0.0",
+  "description": "FIRST Robotics Team 2660",
+  "main": "index.php",
+  "keywords": [
+    "FRC",
+    "FIRST",
+    "Robotics",
+    "Pengbots",
+    "Team",
+    "2660",
+    "Marysville",
+    "Arts",
+    "&",
+    "Technology",
+    "High",
+    "School"
+  ],
+  "authors": [
+    "Caleb B",
+    "Crisante W",
+    "Sam B"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.4",
+    "core-ajax": "Polymer/core-ajax#~0.5.4"
+  }
+}
