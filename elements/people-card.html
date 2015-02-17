@@ -2,14 +2,52 @@
 	attributes="name reasonJoined pic functionCall"> 
 	
 	<template>
-		<div id="cardthing" style="border: solid 1px black; padding: 10px 10px 10px 10px; display: inline-block; background: rgb(255, 255, 255)">
-			<div style="display: inline-block; padding-right: 10px" >
-				<img src="Pictures/{{pic}}" style=" width: 150px; height: 200px; padding-left: 10px;">
+	<script>
+		#id
+		{
+			border: solid 1px black; 
+			padding: 10px 10px 10px 10px; 
+			display: inline-block; 
+			background: rgb(255, 255, 255);
+		}
+		
+		#picDiv
+		{
+			display: inline-block; 
+			padding-right: 10px;
+		}
+		img
+		{
+			width: 150px; 
+			height: 200px; 
+			padding-left: 10px;
+		}
+		#rightSide
+		{
+			display: inline-block;
+		}
+		#peopleColor
+		{
+			color: rgb(0, 0, 0); 
+			background: rgb(255, 255, 255);
+		}
+		#para
+		{
+			width: 200px;
+		}
+		p
+		{
+			color: rgb(0, 0, 0);
+		}
+	</script>
+		<div id="cardthing">
+			<div id="picDiv">
+				<img src="Pictures/{{pic}}">
 			</div>
-			<div style="display: inline-block">
-				<paper-button id="peopleColor" style=" color: rgb(0, 0, 0); background: rgb(255, 255, 255)" raised onclick="{{functionCall}}">{{name}}</paper-button>
-				<div style="width: 200px; ">
-					<p style=" color: rgb(0, 0, 0)">{{reasonJoined}}</p>
+			<div id="rightSide">
+				<paper-button id="peopleColor" raised onclick="{{functionCall}}">{{name}}</paper-button>
+				<div id="para">
+					<p>{{reasonJoined}}</p>
 				</div>
 			</div>
 		</div>
