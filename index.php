@@ -10,6 +10,8 @@
 	<link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
 	<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
 	<link rel="import" href="../bower_components/paper-button/paper-button.html">
+	<link rel="import" href="../elements/people-card.html">
+	<link rel="import" href="../elements/people-populater.html">
 	<style>
 	html,body {
 		height: 100%;
@@ -49,7 +51,11 @@
 		position: relative;
 		width: 82%;
 		left: 8%;
-		border: solid;
+	}
+	#main img
+	{
+		margin-left: auto;
+		margin-right: auto;
 	}
 	div#team
 	{
@@ -69,8 +75,10 @@
 	}
 	div#media
 	{
+		border: solid;
 		display: none;
 		position: relative;
+		padding-left: 30px;
 		width: 82%;
 		left: 8%;
 	}
@@ -99,10 +107,13 @@
 	{
 		display: none;
 	}
+	#back
+	{
+		padding-bottom: 20px;
+	}
   </style>
   </head>
   <body unresolved>
-    <core-header-panel>
 		<core-toolbar>
 			<paper-tabs flex id="tabs" selected="Home" self-end>
 				<paper-tab name="Home" onclick="home()">Home</paper-tab>
@@ -113,19 +124,18 @@
 			</paper-tabs>
 		</core-toolbar>
 		<img src="Background placeholder this is very serious.png" height="50" width="72">
-	<core-header-panel>
 	<div id="main" class="test">
 		<h1>Welcome to the Pengbots!</h1>
-		<img src="eventually will be pic of team">
+		<img src="eventually will be pic of team" height="400" width="600">
 		<h2 id="news">Recent News</h2>
 		<div id="recentNewsArea">
 		</div>
-		
 	</div>
 	
 	<div id="team" class="test">
 		<div class="tea">
 			<h1>Students</h1>
+				<people-card name="Bryce Andersen" reasonJoined="lsdjfljasdfsd fsdfj asdkjsdalfjlasjd fjlasdjfl ashfasdfjaskl dfasdfjasdklfj asdfjasljdf asdjlfj askljf asdjfk sdjl " pic="Mountains!!!.jpg" functionCall="showP('bryce')"></people-card>
 				<paper-button class="colored" raised onclick='showP("bryce")'>Bryce Andersen</paper-button>
 				<paper-button class="colored" raised onclick='showP("taz")'>Taz Anderson</paper-button>
 				<paper-button class="colored" raised onclick='showP("caleb")'>Caleb Braaten</paper-button>
@@ -148,37 +158,67 @@
 				<paper-button class="colored" raised onclick='showP("scott")'>Scott Evensen</paper-button>
 				<paper-button class="colored" raised onclick='showP("suzy")'>Suzy Megyery</paper-button>
 				
-				<!--
-				<paper-button class="colored" raised onclick="caleb()"></paper-button>
-				<paper-button class="colored" raised onclick="caleb()"></paper-button>
-				<paper-button class="colored" raised onclick="caleb()"></paper-button>
-				<paper-button class="colored" raised onclick="caleb()"></paper-button>
-				-->
 		</div>
-		<div id="back" class="invis"><paper-button class="colored" raised onclick="team()">BACK</paper-button></div>
-		<div class="invis" id="bryce"></div>
-		<div class="invis" id="taz"></div>
-		<div class="invis" id="caleb"></div>
-		<div class="invis" id="sam"></div>
-		<div class="invis" id="gary"></div>
-		<div class="invis" id="nelson"></div>
-		<div class="invis" id="nathen"></div>
-		<div class="invis" id="anthony"></div>
-		<div class="invis" id="sheryl"></div>
-		<div class="invis" id="jacob"></div>
-		<div class="invis" id="crisante"></div>
-		<div class="invis" id="madyson"></div>
+		<div id="backTeam" class="invis"><paper-button class="colored" raised onclick="team()">BACK</paper-button></div>
+		<div class="invis" id="bryce">
+		Bryce Andersen
+		</div>
+		<div class="invis" id="taz">
+		Taz Anderson
+		</div>
+		<div class="invis" id="caleb">
+		Caleb Braaten
+		</div>
+		<div class="invis" id="sam">
+		Sam Brooks
+		</div>
+		<div class="invis" id="gary">
+		Gary Dunham
+		</div>
+		<div class="invis" id="nelson">
+		Nelson Dunham
+		</div>
+		<div class="invis" id="nathen">
+		Nathen Flynn
+		</div>
+		<div class="invis" id="anthony">
+		Anthony Guerrero
+		</div>
+		<div class="invis" id="sheryl">
+		Sheryl Johnston
+		</div>
+		<div class="invis" id="jacob">
+		Jacob Sea
+		</div>
+		<div class="invis" id="crisante">
+		Crisante Williams
+		</div>
+		<div class="invis" id="madyson">
+		Maddy Yetter
+		</div>
 		
-		<div class="invis" id="mrchonka"></div>
-		<div class="invis" id="msjordan"></div>
+		<div class="invis" id="mrchonka">
+		Mr. Chonka
+		</div>
+		<div class="invis" id="msjordan">
+		Ms. Jordan
+		</div>
 		
-		<div class="invis" id="scott"></div>
-		<div class="invis" id="suzy"></div>
+		<div class="invis" id="scott">
+		Scott
+		</div>
+		<div class="invis" id="suzy">
+		Suzy
+		</div>
 	</div>
 	
 	<div id="media" class="test">
-		<h1>Title</h1>
-		<paper-button class="colored" raised onclick="history()">View Team History</paper-button>
+		<div class="medi">
+			<h1>Title</h1>
+			<paper-button class="colored" raised onclick="history()">View Team History</paper-button>
+			<paper-button class="colored" raised onclick="pictureAlbum()">Picture Album</paper-button>
+		</div>
+		<div class="invis" id="backMedia"><paper-button class="colored" raised onclick="media()">BACK</paper-button></div>
 	</div>
 	<div id="sponsors" class="test">
 		<h1>Thanks to all our sponsors!</h1>
@@ -200,13 +240,26 @@
 			erase("invis");
 			show("tea");
 			document.getElementById("team").style.display = "block";
-			
 		}
 		
 		function media()
 		{
 			erase("test");
+			erase("invis");
+			show("medi");
 			document.getElementById("media").style.display = "block";
+		}
+		
+		function history()
+		{
+			erase("medi");
+			idshow("backMedia", "inline-block");
+		}
+		
+		function pictureAlbum()
+		{
+			erase("medi");
+			idshow("backMedia", "inline-block");
 		}
 		
 		function sponsors()
@@ -245,10 +298,10 @@
 		function showP(name)//for team div
 		{
 			erase("tea");
-			idshow("back", "inline-block");
+			idshow("backTeam", "inline-block");
 			document.getElementById(name).style.display = "block";
 		}
 		
 	</script>
-		</body>
+</body>
 </html>

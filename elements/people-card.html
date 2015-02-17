@@ -1,0 +1,26 @@
+<polymer-element name="people-card" on-click="expand()"
+	attributes="name reasonJoined pic functionCall"> 
+	
+	<template>
+		<div id="cardthing" style="border: solid 1px black; padding: 10px 10px 10px 10px; display: inline-block; background: rgb(255, 255, 255)">
+			<div style="display: inline-block; padding-right: 10px" >
+				<img src="Pictures/{{pic}}" style=" width: 150px; height: 200px; padding-left: 10px;">
+			</div>
+			<div style="display: inline-block">
+				<paper-button id="peopleColor" style=" color: rgb(0, 0, 0); background: rgb(255, 255, 255)" raised onclick="{{functionCall}}">{{name}}</paper-button>
+				<div style="width: 200px; ">
+					<p style=" color: rgb(0, 0, 0)">{{reasonJoined}}</p>
+				</div>
+			</div>
+		</div>
+	</template>
+	<script>
+		Polymer(
+		{
+			name: "Default",
+			reasonJoined: "Because its awesome",
+			pic: "somePic",
+			functionCall: "something()"
+		});
+	</script>
+</polymer-element>
